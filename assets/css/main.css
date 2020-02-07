@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: white;
+  overflow-x: hidden; }
+
+/*#region Header/Navs*/
+header {
+  background-color: white;
+  min-height: 50px;
+  font-family: Montserrat, Verdana, Arial, sans-serif; }
+  header img {
+    padding: 12px 0 0 10px;
+    width: 230px; }
+  header nav {
+    display: none;
+    margin: auto; }
+    header nav ul {
+      display: flex;
+      padding-bottom: 12px;
+      font-size: 15px;
+      padding: 1.1rem; }
+      header nav ul li {
+        list-style: none;
+        display: inline;
+        margin: auto;
+        justify-content: space-between; }
+        header nav ul li a {
+          text-decoration: none;
+          color: black;
+          transition: ease-in-out .2s; }
+          header nav ul li a:hover {
+            text-decoration: none;
+            color: #666666; }
+  header .MiniNav {
+    float: right;
+    margin-right: 2%;
+    background-color: #edf1f4;
+    border-radius: 0 0 15px 15px;
+    display: none; }
+    header .MiniNav ul {
+      font-size: 11px;
+      font-weight: 550;
+      padding: 9px 4px 0 4px;
+      margin: 0 0 10px 0; }
+      header .MiniNav ul li {
+        list-style: none;
+        display: inline;
+        padding: .5rem; }
+        header .MiniNav ul li a {
+          text-decoration: none;
+          color: black;
+          transition: ease-in-out .3s; }
+          header .MiniNav ul li a:hover {
+            opacity: .7; }
+
+.Active a {
+  color: #008dd6 !important; }
+
+/*#endregion*/
+/*#region Main Content*/
+#fix {
+  background-color: white;
+  position: relative; }
+
+h1 {
+  bottom: 10%;
+  left: 25%;
+  right: 25%;
+  background-color: white;
+  position: absolute;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.Maincontent {
+  background-color: white; }
+
+.InfoCard {
+  background-color: #f7f9fb; }
+
+.MarginTop {
+  margin-top: -30px; }
+
+.Contact {
+  margin-left: 50%; }
+
+.FaciliteterNav ul li {
+  list-style: none;
+  display: inline; }
+
+/*#endregion*/
+@media (min-width: 840px) {
+  .MiniNav {
+    display: block !important; }
+  nav {
+    display: block !important; }
+  h1 {
+    font-size: 2em;
+    bottom: 5%; }
+  header img {
+    margin: 30px 0 0 50px; } }
